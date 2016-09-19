@@ -28,9 +28,9 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: false,
+    autoWatch: true,            // true: Watch changes
     browsers: ['PhantomJS'],
-    singleRun: true
+    singleRun: false            // false: Keep running
   };
 
   config.set(_config);
